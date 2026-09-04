@@ -315,7 +315,7 @@ p:last-child {
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
-/.hero-section {
+.hero-section {
   padding: 5rem 0 6rem 0;
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -376,6 +376,8 @@ p:last-child {
 }
 
 .profile-card {
+  max-width: 420px;
+  margin: 0 auto;
   background-color: var(--surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -396,7 +398,7 @@ p:last-child {
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: #301b107b;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .profile-img {
@@ -405,7 +407,6 @@ p:last-child {
   object-fit: cover;
   display: block;
 }
-
 .tech-labels {
   display: flex;
   flex-wrap: wrap;
