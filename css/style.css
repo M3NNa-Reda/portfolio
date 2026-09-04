@@ -315,10 +315,7 @@ p:last-child {
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
-.hero-section {
+/.hero-section {
   padding: 5rem 0 6rem 0;
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -342,21 +339,25 @@ p:last-child {
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: -0.03em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .hero-subtitle {
+  display: block;
+  margin-top: 0.25rem;
   color: var(--text-primary);
   font-weight: 700;
 }
 
 .hero-lead {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
+  line-height: 1.6;
+  max-width: 620px;
+  margin-bottom: 2.5rem;
 }
 
 .hero-description {
@@ -371,24 +372,22 @@ p:last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
-/* حركة رفع كارت الصورة لأعلى بثبات وسلاسة */
-.profile-card {
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
-    will-change: transform;
+  margin-top: 0.5rem;
 }
 
-.profile-card:hover {
-    transform: translateY(-8px); /* ارتفعت الصورة للأعلى بمقدار 8 بكسل */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* ظل خفيف يبرز الارتفاع */
-}
-/* Profile Visual Composition */
 .profile-card {
   background-color: var(--surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
   box-shadow: var(--shadow-subtle);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image-container {
@@ -423,7 +422,6 @@ p:last-child {
   border-radius: var(--radius-sm);
   border: 1px solid rgba(29, 91, 96, 0.15);
 }
-
 /* ==========================================================================
    ABOUT ME & EDUCATION
    ========================================================================== */
